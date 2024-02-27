@@ -5,7 +5,7 @@ const NavLink = ({ href, title }) => {
     const pathname = usePathname()
 
   return (
-    <Link href={href} className={`block py-2 pl-3 pr-4 ${ pathname == href ? "border-b-4" : ""}`}>{title}</Link>
+    <Link href={href} className={`block py-2 pl-3 pr-4 nav-link ${ pathname == href ? "nav-link-selected" : ""}`}>{title}</Link>
   )
 }
 

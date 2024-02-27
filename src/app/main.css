@@ -16,6 +16,10 @@
     }
 }
 
+section{
+    max-width: 1120px;
+}
+
 .hero-sparkle{
     position: absolute;
     right: -60px;
@@ -26,6 +30,17 @@
     position: absolute;
     right: -8px;
     top: -10px;
+}
+
+.nav-link{
+    position: relative;
+}
+
+
+.nav-link-selected{
+    border-bottom: 3px #3E3F3C solid;
+    font-weight: 600;
+
 }
 
 .sparkle{
@@ -50,10 +65,10 @@
 .experience-item::before{
     content: '';
     position: absolute;
-    top: 0;
-    left: -0.75rem;
-    width: 1.5rem;
-    height: 1.5rem;
+    top: 0.2rem;
+    left: -0.5rem;
+    width: 1rem;
+    height: 1rem;
     border-radius: 50%;
     background-color: #3E3F3C;
 }
@@ -65,5 +80,27 @@
 
 
 .section-headline{
+    font-size: 2em;
+    margin-bottom: 0.4em;
+}
 
+.bubble-container{
+    margin-bottom: 0.8em;
+}
+
+.edu-academy-name{
+    font-weight: 600;
+}
+.edu-course-name{
+    font-weight: 500;
+}
+
+.jobtitle{
+    font-size: 1.6em;
+    font-weight: 600;
+}
+
+.companyname{
+    font-size: 1.4em;
+    font-weight: 500;
 }

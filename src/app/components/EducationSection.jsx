@@ -23,8 +23,8 @@ const EducationSection = () => {
                     <div key={index} className="flex flex-row items-center">
                         <div className="border-2 border-current rounded-full px-6 py-2 font-semibold mr-8">{e.year}</div>
                         <div className="flex flex-col">
-                            <div className="text-xl font-bold">{e.academy}</div>
-                            <div className="text-xl font-bold">{e.course}</div>
+                            <div className="text-xl edu-academy-name">{e.academy}</div>
+                            <div className="text-xl edu-course-name">{e.course}</div>
                         </div>
                     </div>
                 ))

@@ -17,7 +17,7 @@ const SkillSection = () => {
         <div className="grid grid-cols-1 gap-0 lg:grid-cols-2">
             <div className="flex flex-col">
                 <h1 className="text-4xl font-semibold section-headline">Skills</h1>
-                <div className="flex flex-wrap gap-x-2 gap-y-4 mt-4">
+                <div className="flex flex-wrap gap-x-3 gap-y-3.5 bubble-container">
                     {
                         skills.map((text, index) => (
                             <div key={index}>
@@ -29,7 +29,7 @@ const SkillSection = () => {
             </div>
             <div className="flex flex-col">
                 <h1 className="text-4xl font-semibold section-headline">Tools</h1>
-                <div className="flex flex-wrap gap-x-2 gap-y-4 mt-4">
+                <div className="flex flex-wrap gap-x-3 gap-y-3.5 bubble-container">
                     {
                         tools.map((text, index) => (
                             <div key={index}>

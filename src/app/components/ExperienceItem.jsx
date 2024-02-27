@@ -9,10 +9,10 @@ const ExperienceItem = ({exp}) => {
             <span>{exp.end}</span>
         </div>
         <div className='flex flex-1 flex-col'>
-            <h1 className='text-2xl'>{exp.title}</h1>
-            <h1 className='text-xl'>{exp.company}</h1>
+            <h1 className='jobtitle'>{exp.title}</h1>
+            <h1 className='companyname'>{exp.company}</h1>
             <hr className='my-3' />
-            <ul className='list-disc'>
+            <ul className='list-disc pl-4'>
                 {
                     exp.descriptions.map((d, idx) => (
                         <li key={idx}>{d}</li>
