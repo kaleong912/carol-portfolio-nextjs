@@ -23,8 +23,8 @@ const customTheme = {
 
 const exprience = [
     {
-        start: "2010 Oct",
-        end: "2012 Oct",
+        start: "2024 Jan",
+        end: "2021 Jul",
         title: "Senior UX/UI Designer",
         company: "People Technology Holdings Limited",
         descriptions: [
