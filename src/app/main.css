@@ -203,3 +203,14 @@ section{
         margin-top: -0.2rem;
     }
 }
+
+.work-name{
+    font-size: 1.6em;
+    font-weight: 600;
+}
+
+.work-type{
+    font-size: 1.4em;
+    font-weight: 500;
+    margin-bottom: 0.8em;
+}

@@ -10,13 +10,22 @@ const works = [
         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         image: "/faren.jpg",
         cover: "/faren.jpg"
+    },
+
+    {
+        name: "Project name",
+        type: "Project Type",
+        skills: ["skill-1", "skill-2", "skill-3"],
+        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        image: "/faren.jpg",
+        cover: "/faren.jpg"
     }
 ]
 
 const HighlightSection = () => {
   return (
     <section className='my-12'>
-        <div className='relative text-center'>
+        <div className='relative text-center mb-14'>
             <div className='relative mx-auto w-fit'>
                 <Image
                     className="highlight-sparkle-1 sparkle"
@@ -37,7 +46,7 @@ const HighlightSection = () => {
 
         </div>
 
-        <div className='flex flex-col'>
+        <div className='flex flex-col gap-y-20'>
         {
             works.map((work, idx) => (
                 <div key={idx}>

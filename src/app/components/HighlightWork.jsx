@@ -10,7 +10,7 @@ const HighlightWork = ({work}) => {
             <div className='flex flex-col'>
                 <h1 className='work-name'>{work.name}</h1>
                 <h3 className='work-type'>{work.type}</h3>
-                <div className='flex flex-wrap'>
+                <div className='flex flex-wrap gap-x-3 gap-y-3.5 bubble-container'>
                     {
                         work.skills.map((s, idx) => (
                             <Bubble key={idx} text={s} />

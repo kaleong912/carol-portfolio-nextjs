@@ -77,7 +77,7 @@ const ExprienceSection = () => {
   return (
     <section className='my-12'>
         <h1 className="text-4xl font-semibold section-headline mb-4">Experience</h1>
-        <div id='experience-container'>
+        <div id='experience-container' className='pb-12'>
         {
             exprience.map((exp, index) => (
                 <div className='experience-item relative w-full' key={index}>
