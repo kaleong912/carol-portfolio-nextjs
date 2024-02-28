@@ -85,9 +85,13 @@ section{
     border-radius: 50%;
     background-color: white;
     border: 3px solid #3E3F3C;
-    margin: 3rem;
+    margin: 0 3rem;
     z-index: 5;
     animation: morph 8s ease-in-out infinite;
+    background-image: url('/faren.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
 }
 
 .about-shadow{
@@ -166,6 +170,31 @@ section{
 .companyname{
     font-size: 1.4em;
     font-weight: 500;
+}
+
+.highlight-sparkle-1{
+    position: absolute;
+    left: -40px;
+    bottom: -20px;
+}
+
+.highlight-sparkle-2{
+    position: absolute;
+    right: -40px;
+    top: -20px;
+}
+
+.work-image{
+    width: 329px;
+    height: 329px;
+    background-color: #3E3F3C;
+    border-radius: 10%;
+    margin: 2rem;
+}
+
+.work-cover{
+    margin: 0 auto;
+    max-width: 1120px;
 }
 
 @media (min-width: 768px){

@@ -5,6 +5,7 @@ import SkillSection from "./components/SkillSection";
 import EducationSection from "./components/EducationSection";
 import ExprienceSection from "./components/ExprienceSection";
 import AboutSection from "./components/AboutSection";
+import HighlightSection from "./components/HighlightSection";
 
 export default function Home() {
   return (
@@ -16,7 +17,7 @@ export default function Home() {
         <SkillSection/>
         <EducationSection/>
         <ExprienceSection/>
-
+        <HighlightSection/>
       </div>
       
     </main>

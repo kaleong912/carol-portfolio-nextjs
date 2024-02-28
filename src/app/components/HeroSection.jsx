@@ -6,7 +6,7 @@ import {TypeAnimation} from 'react-type-animation';
 
 const HeroSection = () => {
   return (
-    <section className="pb-16 pt-48" id='hero-container'>
+    <section className="pb-32 pt-48" id='hero-container'>
         <div className="grid grid-cols-1 gap-y-4 lg:grid-cols-12">
             <div className="col-span-7">
                 <div className="relative w-fit">
@@ -29,9 +29,9 @@ const HeroSection = () => {
                     initial={{ opacity: 0 }} 
                     animate={{ opacity: 1 }} 
                     transition={{ duration: 0.5 }} 
-                    className="col-span-8 place-self-center text-center justify-self-start sm:text-left">
+                    className="col-span-8 place-self-center justify-self-start sm:text-left">
                     
-                    <h1 className="mb-4 text-2xl sm:text-3xl lg:text-5xl lg:leading-normal font-extrabold">
+                    <h1 className="mb-4 text-5xl sm:text-3xl lg:text-5xl lg:leading-normal font-extrabold">
                         <span className="">
                             Hello, I'm{" "}
                         </span>
