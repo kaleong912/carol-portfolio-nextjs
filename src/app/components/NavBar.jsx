@@ -24,8 +24,8 @@ const NavBar = () => {
 
   return (
     <nav className="fixed mx-auto top-0 left-0 right-0 z-10 bg-[#f3f4eb] bg-opacity-100">
-        <div className="flex flex-wrap items-center justify-between mx-auto px-12 py-2">
-            <Link href={"/"} className="text-5xl font-semibold relative">
+        <div className="flex flex-row relative items-center px-4 md:px-0 py-2 w-full mx-auto" id="navbar">
+            <Link href={"/"} className="relative hidden md:block">
               <Image
                 src="/logo.svg"
                 width="22"
@@ -40,8 +40,8 @@ const NavBar = () => {
                         height="10"
                     />
             </Link>
-            <div className="menu hidden md:block md:w-auto" id="navbar">
-              <ul className="flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0">
+            <div className="menu" >
+              <ul className="flex mx-auto md:p-0 md:flex-row md:space-x-8 mt-0">
                 {
                   navLinks.map((link, index) => (
                     <li key={index}>
@@ -51,8 +51,16 @@ const NavBar = () => {
                 }
               </ul>
             </div>
-            <div>
-            <Link href={"/"} className="">Contact</Link>
+            <div className='ml-auto'>
+            <Link href={"/"} className="contact self-end flex flex-row justify-center items-center gap-x-2">
+              <Image
+                        src="/comment.svg"
+                        alt="logo"
+                        width="18"
+                        height="18"
+              />
+              <span className='hidden md:block'>Contact</span>
+            </Link>
             </div>
         </div>
     </nav>
