@@ -16,8 +16,9 @@ const AboutSection = () => {
           />
         </div>
         <div className='flex flex-col-reverse justify-center items-center md:flex-row'>
-          <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br /><br />Lorem Ipsum is simply dummy text of the printing and typesetting industry. </div>
+          <div>
+Hi, I’m Carol Cheung a UX/UI & Graphic designer from Hong Kong. I have over 9 years of experience in UI/UX and graphic design. For the past 8 years, I've collaborated with IT solutions agencies, honing my skills in creating diverse products for various brands. 
+            <p>My passion lies in improving lives through design, and I'm committed to continuous learning and growth.</p>  </div>
           <div className='relative'>
             <div className='about-avator'>
 
