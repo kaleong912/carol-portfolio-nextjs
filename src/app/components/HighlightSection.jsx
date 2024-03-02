@@ -5,20 +5,12 @@ import HighlightWork from './HighlightWork'
 const works = [
     {
         name: "Casual Enter",
+        logo:"/logo_casualenter.png",
         type: "Job Matching Mobile App",
         skills: ["User Flow", "UI UX Design", "Branding"],
         desc: "It's an all-in-one application designed specifically for matching individuals from different industries and backgrounds. Through this application, people can match with various types of jobs and track their work schedules and payroll within the app. The aim is to make it easier for individuals in the gig economy to manage all aspects of their work in one convenient platform.",
-        image: "/logo_casualenter.png",
-        cover: "/IMG_Entering_highlight.png"
-    },
-
-    {
-        name: "Project name",
-        type: "Project Type",
-        skills: ["skill-1", "skill-2", "skill-3"],
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        image: "/faren.jpg",
-        cover: "/faren.jpg"
+        image: "/big_logo_casualenter.png",
+        link: "/"
     }
 ]
 
