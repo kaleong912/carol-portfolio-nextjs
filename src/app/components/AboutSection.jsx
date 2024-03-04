@@ -16,7 +16,7 @@ const AboutSection = () => {
           />
         </div>
         <div className='flex flex-col-reverse justify-center items-center md:flex-row'>
-          <div>
+          <div className='info-text'>
 Hi, I’m Carol Cheung a UX/UI & Graphic designer from Hong Kong. I have over 9 years of experience in UI/UX and graphic design. For the past 8 years, I've collaborated with IT solutions agencies, honing my skills in creating diverse products for various brands. 
 <br />My passion lies in improving lives through design, and I'm committed to continuous learning and growth.  </div>
           <div className='relative'>

@@ -204,6 +204,55 @@ section{
     }
 }
 
+@media only screen and (max-width: 600px) {
+    .nav-link{
+        font-size: 2.5rem;
+    }
+
+    .section-headline{
+        font-weight: bold;
+        font-size: 4.5rem;
+    }
+
+    #hero-container{
+        min-height: 1100px;
+    }
+
+    .info-text{
+        font-size: 2rem;
+    }
+
+    .about-avator{
+        position: relative;
+        width: 30rem;
+        height: 30rem;
+        border-radius: 50%;
+        background-color: white;
+        border: 3px solid #3E3F3C;
+        margin: 5rem 3rem;
+        z-index: 5;
+        animation: morph 8s ease-in-out infinite;
+        background-image: url('/faren.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50%;
+    }
+    
+    .about-shadow{
+        position: absolute;
+        width: 30rem;
+        height: 30rem;
+        bottom: -1rem;
+        right: -4rem;
+        border-radius: 50%;
+        background-color: #3E3F3C;
+        border: 3px solid #3E3F3C;
+        margin: 3rem;
+        z-index: 1;
+        animation: morph 8s ease-in-out infinite;
+    }
+}
+
 .work-name{
     font-size: 1.6em;
     font-weight: 600;

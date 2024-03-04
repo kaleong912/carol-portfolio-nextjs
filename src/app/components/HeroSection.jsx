@@ -31,7 +31,7 @@ const HeroSection = () => {
                     transition={{ duration: 0.5 }} 
                     className="col-span-8 place-self-center justify-self-start sm:text-left">
                     
-                    <h1 className="mb-4 text-5xl sm:text-3xl lg:text-5xl lg:leading-normal font-extrabold">
+                    <h1 className="mb-4 text-9xl sm:text-3xl lg:text-5xl lg:leading-normal font-extrabold">
                         <span className="">
                             Hello, I'm{" "}
                         </span>
@@ -56,10 +56,10 @@ const HeroSection = () => {
                     </h1>
                 </motion.div>
                 <div className="col-span-7">
-                    <h1 className="text-3xl">Portfolio Website</h1>
+                    <h1 className="text-6xl md:text-3xl">Portfolio Website</h1>
                 </div>
-                <div className="col-span-7">
-                    <span className="bg-[#3e3f3c] text-white rounded-full px-4 py-2 uppercase">Carol Chenug</span>
+                <div className="col-span-7 mt-8 md:mt-0">
+                    <span className="bg-[#3e3f3c] text-white rounded-full px-4 py-2 uppercase text-4xl md:text-xl">Carol Chenug</span>
                 </div>
         </div>
     </section>

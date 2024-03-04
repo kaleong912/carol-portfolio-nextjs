@@ -6,22 +6,22 @@ const FooterSection = () => {
   return (
     <section className='my-12'>
         <div className='flex flex-col md:flex-row flex-nowrap '>
-            <div className="flex flex-col min-w-96 gap-y-3 mr-48">
-                <h1 className='footer-header'>Contact</h1>
-                <div className='footer-name uppercase'>carol cheung</div>
-                <div className='flex flex-col md:flex-row'>
-                    <Bubble classes="w-fit min-w-0 md:min-w-40 text-center" text="Phone" />
-                    <h3 className='footer-info ml-0 md:ml-12'>+852 9198 0066</h3>
+            <div className="flex flex-col min-w-96 gap-y-3 mr-96">
+                <h1 className='section-headline'>Contact</h1>
+                <div className='bg-[#3e3f3c] text-white rounded-full px-4 py-2 uppercase text-center self-start'>carol cheung</div>
+                <div className='flex flex-col md:flex-row gap-y-1 items-start md:items-center'>
+                    <Bubble classes="w-fit min-w-0 md:min-w-40 text-center font-semibold" text="Phone" />
+                    <h3 className='footer-info ml-0 md:ml-6 font-semibold'>+852 9198 0066</h3>
                 </div>
 
-                <div className='flex flex-col md:flex-row'>
-                    <Bubble classes="w-fit md:min-w-40 text-center" text="Mail" />
-                    <h3 className='footer-info ml-0 md:ml-12'>cheung3413@gmail.com</h3>
+                <div className='flex flex-col md:flex-row gap-y-1  items-start md:items-center'>
+                    <Bubble classes="w-fit md:min-w-40 text-center font-semibold" text="Mail" />
+                    <h3 className='footer-info ml-0 md:ml-6 font-semibold'>cheung3413@gmail.com</h3>
                 </div>
 
-                <div className='flex flex-col md:flex-row'>
-                    <Bubble classes="w-fit md:min-w-40 text-center" text="Portfolio" />
-                    <h3 className='footer-info ml-0 md:ml-12'>https://carolcheung.cc</h3>
+                <div className='flex flex-col md:flex-row gap-y-1  items-start md:items-center'>
+                    <Bubble classes="w-fit md:min-w-40 text-center font-semibold" text="Portfolio" />
+                    <h3 className='footer-info ml-0 md:ml-6  font-semibold'>https://carolcheung.cc</h3>
                 </div>
             </div>
 
@@ -33,7 +33,7 @@ const FooterSection = () => {
                     height={130}>
 
                 </Image>
-                <h1>Thank You For<br />Your Scrolling :D</h1>
+                <h1 className='companyname text-center'>Thank You For<br />Your Scrolling :D</h1>
             </div>
         </div>
     </section>
