@@ -8,9 +8,13 @@ import AboutSection from "./components/AboutSection";
 import HighlightSection from "./components/HighlightSection";
 import FooterSection from "./components/FooterSection";
 
+import ScrollToTopButton from "./components/ScrollToTopButton";
+
+
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col">
+    <main className="flex min-h-screen flex-col relative">
       <NavBar/>
       <div className="mx-auto py-4 px-4 md:px-0">
         <HeroSection/>
@@ -22,7 +26,7 @@ export default function Home() {
         <FooterSection/>
 
       </div>
-      
+      <ScrollToTopButton />
     </main>
   );
 }

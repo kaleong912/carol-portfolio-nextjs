@@ -11,7 +11,7 @@ const navLinks = [
   },
   {
     title: "UI/UX.",
-    path: "/showcase",
+    path: "/projects",
   },
   {
     title: "Graphic.",

@@ -3,6 +3,7 @@ import NavBar from '../components/NavBar'
 import ProjectItem from '../components/ProjectItem'
 import Image from 'next/image'
 import Link from 'next/link'
+import ScrollToTopButton from '../components/ScrollToTopButton'
 
 const projects = [
     {
@@ -34,7 +35,8 @@ const projects = [
 
 export default function Projects() {
   return (
-    <main className="flex min-h-screen flex-col">
+    <main className="flex min-h-screen flex-col relative">
+    <ScrollToTopButton />
       <NavBar/>
       <section className='mx-auto py-4 px-4'>
       <div className='flex flex-col pb-32 pt-48'>
