@@ -38,7 +38,7 @@ const ProjectItem = ({work}) => {
             {
                 work.contents.map((content, idx) => (
                     <div className='flex flex-col' key={idx}>
-                        <h1 className='content-headline'>{ content.text }</h1>
+                        <h1 className='content-headline gap-2'>{ content.text }</h1>
 
                         <div className='flex flex-wrap items-center justify-center'>
                             {
