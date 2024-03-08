@@ -7,7 +7,7 @@ import {TypeAnimation} from 'react-type-animation';
 const HeroSection = () => {
   return (
     <section className="pb-32 pt-48" id='hero-container'>
-        <div className="grid grid-cols-1 gap-y-4 lg:grid-cols-12">
+        <div className="grid grid-cols-1 gap-y-4 lg:grid-cols-12 max-w-full">
             <div className="col-span-7">
                 <div className="relative w-fit">
                     <Image
@@ -25,13 +25,11 @@ const HeroSection = () => {
                     />
                 </div>
             </div>
-            <motion.div 
-                    initial={{ opacity: 0 }} 
-                    animate={{ opacity: 1 }} 
-                    transition={{ duration: 0.5 }} 
-                    className="col-span-8 place-self-center justify-self-start sm:text-left">
+            <div 
                     
-                    <h1 className="mb-4 text-9xl sm:text-3xl lg:text-5xl lg:leading-normal font-extrabold">
+                    className="col-span-8 place-self-center justify-self-start sm:text-left ">
+                    
+                    <h1 className="mb-4 text-5xl sm:text-3xl lg:text-5xl lg:leading-normal font-extrabold">
                         <span className="">
                             Hello, I'm{" "}
                         </span>
@@ -54,7 +52,7 @@ const HeroSection = () => {
                             repeat={Infinity}
                             />
                     </h1>
-                </motion.div>
+                </div>
                 <div className="col-span-7">
                     <h1 className="text-6xl md:text-3xl">Portfolio Website</h1>
                 </div>

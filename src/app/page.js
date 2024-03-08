@@ -14,7 +14,7 @@ import ScrollToTopButton from "./components/ScrollToTopButton";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col relative">
+    <main className="flex min-h-screen  flex-col relative">
       <NavBar/>
       <div className="mx-auto py-4 px-4 md:px-0">
         <HeroSection/>

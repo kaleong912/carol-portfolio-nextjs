@@ -31,6 +31,7 @@
 }
 
 section{
+    width: 100vw;
     max-width: 1120px;
 }
 
@@ -66,6 +67,7 @@ section{
     top: 0;
     left: 50%;
     transform: translate(-50%, 0);
+    font-size: 16px;
 }
 
 .sparkle{
@@ -188,7 +190,8 @@ section{
     background-color: transparent;
     width: 480px;
     height: 380px;
-    background-size: cover;
+    background-size: contain;
+    background-position: center;
     margin: 2rem;
 }
 
@@ -204,10 +207,42 @@ section{
     }
 }
 
-@media only screen and (max-width: 600px) {
+.work-name{
+    font-size: 1.6em;
+    font-weight: 600;
+}
+
+.work-type{
+    font-size: 1.4em;
+    font-weight: 500;
+    margin-bottom: 0.8em;
+}
+
+.work-link{
+    margin-top: 1.5rem;
+    font-size: 1.4em;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.btn-back{
+    background-color: #3E3F3C;
+    color: #F3F4EB;
+}
+
+.content-headline{
+    font-size: 1.4rem;
+}
+
+@media only screen and (max-width: 769px) {
     .nav-link{
-        font-size: 2.5rem;
+        font-size: 16px;
     }
+
+    section{
+        max-width: 100vw;
+    }
+    
 
     .section-headline{
         font-weight: bold;
@@ -251,31 +286,24 @@ section{
         z-index: 1;
         animation: morph 8s ease-in-out infinite;
     }
-}
 
-.work-name{
-    font-size: 1.6em;
-    font-weight: 600;
-}
+    .work-type{
+        font-size: 2.4em;
+        font-weight: 500;
+        margin-bottom: 0.8em;
+    }
 
-.work-type{
-    font-size: 1.4em;
-    font-weight: 500;
-    margin-bottom: 0.8em;
-}
+    .work-desc{
+        font-size: 1.8em;
+    }
 
-.work-link{
-    margin-top: 1.5rem;
-    font-size: 1.4em;
-    font-weight: 500;
-    text-decoration: underline;
-}
+    .section-headline{
+        margin-bottom: .6em;
+    }
 
-.btn-back{
-    background-color: #3E3F3C;
-    color: #F3F4EB;
-}
+    .work-link{
+        font-size: 2em;
+    }
 
-.content-headline{
-    font-size: 1.4rem;
+    
 }

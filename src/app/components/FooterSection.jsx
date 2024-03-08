@@ -5,8 +5,8 @@ import Image from 'next/image'
 const FooterSection = () => {
   return (
     <section className='my-12'>
-        <div className='flex flex-col md:flex-row flex-nowrap '>
-            <div className="flex flex-col min-w-96 gap-y-3 mr-96">
+        <div className='flex flex-col md:flex-row flex-nowrap w-full'>
+            <div className="flex flex-col min-w-96 gap-y-3 ">
                 <h1 className='section-headline'>Contact</h1>
                 <div className='bg-[#3e3f3c] text-white rounded-full px-4 py-2 uppercase text-center self-start'>carol cheung</div>
                 <div className='flex flex-col md:flex-row gap-y-1 items-start md:items-center'>
