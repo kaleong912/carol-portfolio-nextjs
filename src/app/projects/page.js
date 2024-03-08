@@ -12,7 +12,7 @@ const projects = [
         type: "Mobile App & Web",
         skills: ["User Research", "User Flow", "UI Design"],
         desc: "'Casual Enter' is an all-in-one application designed specifically for matching individuals from different industries and backgrounds. Through this application, people can match with various types of jobs and track their work schedules and payroll within the app. The aim is to make it easier for individuals in the gig economy to manage all aspects of their work in one convenient platform.",
-        image: "/project_casualenter/casualenter_mockup_cover_01.png",
+        image: "big_logo_casualenter.png",
         link: "casual_enter",
         contents:[
             {
@@ -101,9 +101,9 @@ const projects = [
             }
             ,
             {
-                text: "Printing Materials ｜ Instruction Guide & Shop QR code Poster",
+                text: "Printing Materials & Instruction Guide & Shop QR code Poster",
                 images: [
-                    "/project_staffenter/staffenter_detail_printingmaterials_02/.png"
+                    "/project_staffenter/staffenter_detail_printingmaterials_02.png"
                 ]
             }
             
@@ -113,33 +113,33 @@ const projects = [
 
     {
         name: "Citysuper Foodie",
-        logo:"/project_foodie/foodie_logo_01.png",
+        logo:"/project_citysuper_foodie/foodie_logo_01.png",
         type: "Rresponsive Website & CMS",
         skills: ["User Flow", "UI Design"],
         desc: "This is a CMS (Content Management System) designed for internal employees of citysuper. Its main purpose is to facilitate simple page design for promoting different products, incorporating recipes, and showcasing products available in the online store. <br /><br />Within this CMS, citysuper employees can create promotional pages, upload various images, and customize the layout. They can also add links to the website and include different products available in the online store.",
-        image: "/project_foodie/foodie_mockup_cover_01.png",
+        image: "/project_citysuper_foodie/foodie_mockup_cover_01.png",
         link: "foodie",
         contents:[
             {
                 text: "Competitive Analysis & User Research",
                 images: [
-                    "/project_foodie/foodie_detail_ userresearch_01.png",
-                    "//project_foodie/foodie_detail_ userresearch_02.png"
+                    "/project_citysuper_foodie/foodie_detail_userresearch_01.png",
+                    "/project_citysuper_foodie/foodie_detail_userresearch_02.png"
                 ]
             }
             ,
             {
                 text: "CMS UI Design",
                 images: [
-                    "/project_foodie/foodie_detail_UI_01.png",
-                    "/project_foodie/foodie_detail_UI_02.png"
+                    "/project_citysuper_foodie/foodie_detail_UI_01.png",
+                    "/project_citysuper_foodie/foodie_detail_UI_02.png",
                 ]
             }
             ,
             {
-                text: "UI Visual Design",
+                text: "UI Visual Designn",
                 images: [
-                    "/project_foodie/foodie_detail_UI_03.png"
+                    "/project_citysuper_foodie/foodie_detail_UI_03.png"
                 ]
             }
             
@@ -174,10 +174,10 @@ const projects = [
             {
                 text: "CMS UI",
                 images: [
-                    "/project_citysuper_eshop/citysupereshop_detail_graphic_01.png",
-                    "/project_citysuper_eshop/citysupereshop_detail_graphic_02.png",
-                    "/project_citysuper_eshop/citysupereshop_detail_graphic_03.png",
-                    "/project_citysuper_eshop/citysupereshop_detail_graphic_04.png"
+                    "/project_citysuper_eshop/citysupereshop_detail_CMSUI_01.png",
+                    "/project_citysuper_eshop/citysupereshop_detail_CMSUI_02.png",
+                    "/project_citysuper_eshop/citysupereshop_detail_CMSUI_03.png",
+                    "/project_citysuper_eshop/citysupereshop_detail_CMSUI_04.png"
                 ]
             }
             ,
@@ -292,7 +292,7 @@ const projects = [
             {
                 text: "UI Design",
                 images: [
-                    "/project_theentrance/theentrance_detail_userflow_01.png"
+                    "/project_theentrance/theentrance_detail_UI_01.png"
                 ]
             }
             
@@ -325,7 +325,10 @@ const projects = [
 
         ]
     }
+    
+    
 ]
+
 
 export default function Projects() {
   return (
