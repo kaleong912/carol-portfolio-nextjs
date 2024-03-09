@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const ProjectItem = ({work}) => {
   return (
-    <div className='flex flex-col mb-48' id={work.link}>
+    <div className='flex flex-col mb-48' id={work.link} style={{ scrollMarginTop: '40px' }}>
         <div className='flex flex-col md:flex-row'>
             <div className='flex flex-col'>
                 <img src={work.logo} alt="" className='self-center md:self-start' />
