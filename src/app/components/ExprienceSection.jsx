@@ -75,7 +75,7 @@ const exprience = [
 
 const ExprienceSection = () => {
   return (
-    <section className='my-12'>
+    <div className='my-12'>
         <h1 className="text-4xl font-semibold section-headline mb-4">Experience</h1>
         <div id='experience-container' className='pb-12'>
         {
@@ -86,7 +86,7 @@ const ExprienceSection = () => {
             ))
         }
         </div>
-    </section>
+    </div>
   )
 }
 

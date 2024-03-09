@@ -10,7 +10,7 @@ const HighlightWork = ({work}) => {
         <div className='flex flex-col md:flex-row'>
             <div className='flex flex-col'>
                 <img src={work.logo} alt="" className='self-center md:self-start' />
-                <div className='self-center'>
+                <div className='self-center w-full'>
                     <div className="work-image   md:hidden block" style={{
                         backgroundImage: `url(${work.image})`
                     }}>

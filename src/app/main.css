@@ -234,6 +234,11 @@ section{
     font-size: 1.4rem;
 }
 
+.graphic-text{
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
 @media only screen and (max-width: 769px) {
     .nav-link{
         font-size: 16px;
@@ -246,7 +251,7 @@ section{
 
     .section-headline{
         font-weight: bold;
-        font-size: 4.5rem;
+        font-size: 3.5rem;
     }
 
     #hero-container{
@@ -257,6 +262,11 @@ section{
         font-size: 2rem;
     }
 
+    .graphic-text{
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+    }
+
     .about-avator{
         position: relative;
         width: 30rem;
@@ -264,10 +274,10 @@ section{
         border-radius: 50%;
         background-color: white;
         border: 3px solid #3E3F3C;
-        margin: 5rem 3rem;
+        margin: 3rem 0;
         z-index: 5;
         animation: morph 8s ease-in-out infinite;
-        background-image: url('/faren.jpg');
+        background-image: url('/aboutme_IMG_003.png');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: 50%;
@@ -277,12 +287,12 @@ section{
         position: absolute;
         width: 30rem;
         height: 30rem;
-        bottom: -1rem;
+        bottom: 2rem;
         right: -4rem;
         border-radius: 50%;
         background-color: #3E3F3C;
         border: 3px solid #3E3F3C;
-        margin: 3rem;
+        margin: 0 ;
         z-index: 1;
         animation: morph 8s ease-in-out infinite;
     }
@@ -303,6 +313,16 @@ section{
 
     .work-link{
         font-size: 2em;
+    }
+
+    .work-image{
+        background-color: transparent;
+        width: 100%;
+        height: 380px;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: 2rem 0;
     }
 
     

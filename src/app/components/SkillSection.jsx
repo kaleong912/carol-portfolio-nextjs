@@ -13,7 +13,7 @@ const tools = [
 
 const SkillSection = () => {
   return (
-    <section className='my-12'>
+    <div className='my-12'>
         <div className="grid grid-cols-1 gap-0 lg:grid-cols-2">
             <div className="flex flex-col">
                 <h1 className="text-4xl font-semibold section-headline">Skills</h1>
@@ -40,7 +40,7 @@ const SkillSection = () => {
                 </div>
             </div>
         </div>
-    </section>
+    </div>
   )
 }
 

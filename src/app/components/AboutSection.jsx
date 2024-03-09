@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const AboutSection = () => {
   return (
-    <section className='my-12'>
+    <div className='my-12'>
       <div className='relative'>
         <div className='relative w-fit'>
           <h1 className='text-4xl font-semibold section-headline inline-block'>About Me</h1>
@@ -29,7 +29,7 @@ Hi, I&apos;m Carol Cheung a UX/UI & Graphic designer from Hong Kong. I have over
           </div>
         </div>
       </div>
-    </section>
+    </div>
   )
 }
 

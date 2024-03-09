@@ -15,7 +15,7 @@ const education = [
 
 const EducationSection = () => {
   return (
-    <section className='my-12'>
+    <div className='my-12'>
         <h1 className="text-4xl font-semibold section-headline">Education</h1>
         <div className="flex flex-col gap-2">
             {
@@ -30,7 +30,7 @@ const EducationSection = () => {
                 ))
             }
         </div>
-    </section>
+    </div>
   )
 }
 

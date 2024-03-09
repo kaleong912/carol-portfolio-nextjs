@@ -15,7 +15,7 @@ const navLinks = [
   },
   {
     title: "Graphic.",
-    path: "/grahic",
+    path: "/graphics",
   },
 ];
 

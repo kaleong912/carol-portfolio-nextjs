@@ -4,6 +4,7 @@ import ProjectItem from '../components/ProjectItem'
 import Image from 'next/image'
 import Link from 'next/link'
 import ScrollToTopButton from '../components/ScrollToTopButton'
+import FooterSection from '../components/FooterSection'
 
 const projects = [
     {
@@ -83,7 +84,7 @@ const projects = [
         skills: ["Illustration", "User Flow", "UI Design"],
         desc: "'Staff Enter' is a clock-in/clock-out system designed for employers to manage their employees' attendance. All employees simply need to install an application or visit the website. They can then scan a QR code to record their clock-in and clock-out times. <br /><br />Employers can generate various types of reports based on the times employees scan the QR code, making monthly payroll calculations faster and more convenient.",
         image: "/project_staffenter/staffenter_mockup_cover_01.png",
-        link: "/",
+        link: "staff_enter",
         contents:[
             {
                 text: "User Flow",
@@ -335,17 +336,17 @@ export default function Projects() {
     <main className="flex min-h-screen flex-col relative">
     <ScrollToTopButton />
       <NavBar/>
-      <section className='mx-auto py-4 px-4'>
+      <section className='mx-auto py-4 px-4 overflow-x-hidden'>
       <div className='flex flex-col pb-32 pt-48'>
-      <Link href={"/"}>
-
-        </Link>
+      
         {
             projects.map((p, idx) => (
                 <ProjectItem key={idx} work={p} />
             ))
         }
+        <FooterSection />
       </div>
+      
       </section>
     </main>
   )

@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen  flex-col relative">
       <NavBar/>
-      <div className="mx-auto py-4 px-4 md:px-0">
+      <section className="mx-auto py-4 px-4 md:px-0 overflow-x-hidden">
         <HeroSection/>
         <AboutSection/>
         <SkillSection/>
@@ -25,7 +25,7 @@ export default function Home() {
         <HighlightSection/>
         <FooterSection/>
 
-      </div>
+      </section>
       <ScrollToTopButton />
     </main>
   );

@@ -6,7 +6,7 @@ import {TypeAnimation} from 'react-type-animation';
 
 const HeroSection = () => {
   return (
-    <section className="pb-32 pt-48" id='hero-container'>
+    <div className="pb-32 pt-48" id='hero-container'>
         <div className="grid grid-cols-1 gap-y-4 lg:grid-cols-12 max-w-full">
             <div className="col-span-7">
                 <div className="relative w-fit">
@@ -60,7 +60,7 @@ const HeroSection = () => {
                     <span className="bg-[#3e3f3c] text-white rounded-full px-4 py-2 uppercase text-4xl md:text-xl">Carol Chenug</span>
                 </div>
         </div>
-    </section>
+    </div>
   )
 }
 

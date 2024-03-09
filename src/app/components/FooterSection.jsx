@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const FooterSection = () => {
   return (
-    <section className='my-12'>
+    <div className='my-12'>
         <div className='flex flex-col md:flex-row flex-nowrap w-full'>
             <div className="flex flex-col min-w-96 gap-y-3 ">
                 <h1 className='section-headline'>Contact</h1>
@@ -25,7 +25,7 @@ const FooterSection = () => {
                 </div>
             </div>
 
-            <div className='flex flex-col justify-center items-center'>
+            <div className='flex flex-col justify-center items-center mt-24 md:mt-0 ml-0 md:ml-96'>
                 <Image
                     src="/fi_9131566.svg"
                     alt="Heart"
@@ -36,7 +36,7 @@ const FooterSection = () => {
                 <h1 className='companyname text-center'>Thank You For<br />Your Scrolling :D</h1>
             </div>
         </div>
-    </section>
+    </div>
   )
 }
 

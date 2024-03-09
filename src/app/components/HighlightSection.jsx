@@ -46,7 +46,7 @@ const works = [
 
 const HighlightSection = () => {
   return (
-    <section className='my-12'>
+    <div className='my-12'>
         <div className='relative text-center mb-14'>
             <div className='relative mx-auto w-fit'>
                 <Image
@@ -56,7 +56,7 @@ const HighlightSection = () => {
                     width="35"
                     height="36"
                 />
-                <h1 className="text-4xl font-semibold section-headline mb-4">Highlights Work</h1>
+                <h1 className="text-4xl font-semibold section-headline mb-4 leading-tight">Highlights Work</h1>
                 <Image
                     className="highlight-sparkle-2 sparkle"
                     src="/sparkle.svg"
@@ -77,7 +77,7 @@ const HighlightSection = () => {
             ))
         }
         </div>
-    </section>
+    </div>
   )
 }
 
