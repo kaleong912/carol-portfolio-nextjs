@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen  flex-col relative">
       <NavBar/>
-      <section className="mx-auto py-4 px-4 md:px-0 overflow-x-hidden">
+      <section className="mx-auto py-4 px-4 md:px-0 md:overflow-visible overflow-x-hidden">
         <HeroSection/>
         <AboutSection/>
         <SkillSection/>

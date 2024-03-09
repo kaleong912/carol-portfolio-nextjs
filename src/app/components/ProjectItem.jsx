@@ -16,14 +16,19 @@ const ProjectItem = ({work}) => {
                     </div>
                 </div>
                 <h3 className='work-type'>{work.type}</h3>
-                <div className='flex flex-wrap gap-x-3 gap-y-3.5 bubble-container text-2xl md:text-base'>
+                <div className='flex flex-wrap gap-x-3 gap-y-3.5 bubble-container text-xl md:text-base'>
                     {
                         work.skills.map((s, idx) => (
                             <Bubble key={idx} text={s} />
                         ))
                     }
                 </div>
-                <div className='work-desc' >{work.desc}</div>
+                <div className='work-desc whitespace-pre-line' >{
+                    work.desc.split('<br />').map((t, idx) => (
+                        <p key={idx}>{t}<br /></p>
+                        
+                    ))
+                }</div>
             </div>
             <div>
                 <div className="work-image hidden md:block" style={{
@@ -34,7 +39,7 @@ const ProjectItem = ({work}) => {
             </div>
         </div>
 
-        <div className='flex flex-col'>
+        <div className='flex flex-col mt-16'>
             {
                 work.contents.map((content, idx) => (
                     <div className='flex flex-col' key={idx}>

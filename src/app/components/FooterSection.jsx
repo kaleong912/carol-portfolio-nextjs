@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const FooterSection = () => {
   return (
-    <div className='my-12'>
+    <div className='my-12' id='footer'>
         <div className='flex flex-col md:flex-row flex-nowrap w-full'>
             <div className="flex flex-col min-w-96 gap-y-3 ">
                 <h1 className='section-headline'>Contact</h1>

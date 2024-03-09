@@ -192,6 +192,7 @@ section{
     height: 380px;
     background-size: contain;
     background-position: center;
+    background-repeat: no-repeat;
     margin: 2rem;
 }
 
@@ -199,6 +200,44 @@ section{
     margin: 0 auto;
     max-width: 1120px;
 }
+
+.scrollspy-container{
+    position: fixed;
+    background-color: transparent;
+    width: 120px;
+    right: 0;
+    top: 40px;
+    height: calc(100% - 80px);
+}
+
+.scrollspy-inner-container{
+    height: 100%;
+}
+
+.scrollspy-name-container{
+    height: 100%;
+    writing-mode: vertical-rl;
+    position: absolute;
+    
+    left: 30px;
+}
+
+.scroll-spy{
+    border: 0;
+    writing-mode: vertical-rl;
+    border-left: 2px solid #3e3f3c40;
+}
+
+.scroll-spy:has(> .active-scroll-spy){
+    border-left: 2px solid #3E3F3C;
+    transition: all 0.5s;
+}
+
+.active-scroll-spy {
+    
+    border-left: 2px solid #3E3F3C;
+    transition: all 0.5s;
+  }
 
 @media (min-width: 768px){
     .experience-info{
@@ -251,7 +290,7 @@ section{
 
     .section-headline{
         font-weight: bold;
-        font-size: 3.5rem;
+        font-size: 2.3rem;
     }
 
     #hero-container{
@@ -259,7 +298,11 @@ section{
     }
 
     .info-text{
-        font-size: 2rem;
+        font-size: 1.2rem;
+    }
+
+    .experience-info{
+        border: 2px #3E3F3C solid;
     }
 
     .graphic-text{
@@ -269,8 +312,8 @@ section{
 
     .about-avator{
         position: relative;
-        width: 30rem;
-        height: 30rem;
+        width: 20rem;
+        height: 20rem;
         border-radius: 50%;
         background-color: white;
         border: 3px solid #3E3F3C;
@@ -285,10 +328,10 @@ section{
     
     .about-shadow{
         position: absolute;
-        width: 30rem;
-        height: 30rem;
+        width: 20rem;
+        height: 20rem;
         bottom: 2rem;
-        right: -4rem;
+        right: -1rem;
         border-radius: 50%;
         background-color: #3E3F3C;
         border: 3px solid #3E3F3C;
@@ -298,13 +341,13 @@ section{
     }
 
     .work-type{
-        font-size: 2.4em;
+        font-size: 1.6em;
         font-weight: 500;
         margin-bottom: 0.8em;
     }
 
     .work-desc{
-        font-size: 1.8em;
+        font-size: 1em;
     }
 
     .section-headline{
@@ -312,17 +355,22 @@ section{
     }
 
     .work-link{
-        font-size: 2em;
+        font-size: 1.4em;
     }
 
     .work-image{
         background-color: transparent;
         width: 100%;
-        height: 380px;
+        height: 270px;
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
         margin: 2rem 0;
+    }
+
+    .scrollspy-container{
+        right: 30px;
+        width: 2px;
     }
 
     

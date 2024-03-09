@@ -52,7 +52,7 @@ const NavBar = () => {
               </ul>
             </div>
             <div className='ml-auto'>
-            <Link href={"/"} className="contact self-end flex flex-row justify-center items-center gap-x-2">
+            <Link href={"#footer"} className="contact self-end flex flex-row justify-center items-center gap-x-2">
               <Image
                         src="/comment.svg"
                         alt="logo"

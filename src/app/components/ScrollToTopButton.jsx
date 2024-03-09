@@ -34,11 +34,11 @@ const scrollToTop = () => {
   }, [])
   return (
     <button 
-          className={`fixed bottom-0 right-0 p-10 transition-opacity duration-200 ${
+          className={`fixed bottom-0 -right-8 p-10 transition-opacity duration-200 ${
             isVisible ? "opacity-100" : "opacity-0"
           }`} onClick={scrollToTop}>
           <Image 
-          src="/top.svg"
+          src="/backtotop.png"
           alt="top"
           width={64}
           height={64}

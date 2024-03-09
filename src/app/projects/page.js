@@ -1,10 +1,12 @@
 import React from 'react'
 import NavBar from '../components/NavBar'
-import ProjectItem from '../components/ProjectItem'
+import ProjectSection from '../components/ProjectSection'
 import Image from 'next/image'
 import Link from 'next/link'
 import ScrollToTopButton from '../components/ScrollToTopButton'
 import FooterSection from '../components/FooterSection'
+import ScrollSpy from "react-ui-scrollspy";
+
 
 const projects = [
     {
@@ -155,7 +157,7 @@ const projects = [
         skills: ["Wireframing", "UI Design"],
         desc: "Client requests to leverage their existing online web store dates as the basis for developing a mobile application. This app needs to accommodate various categories of member benefits and services offered by City Super. Additionally, it should incorporate a feature allowing users to apply discount codes during their transactions. <br /><br />The CMS (Content Management System) designed for internal employees of citysuper. Its main purpose is to categorize and calculate discounts & discounts code for promotional products on the e-shop app & website.",
         image: "/project_citysuper_eshop/citysupereshop_mockup_cover_01.png",
-        link: "/",
+        link: "citysuper",
         contents:[
             {
                 text: "Wireframing",
@@ -259,7 +261,7 @@ const projects = [
         skills: ["User Flow", "UI Design"],
         desc: "This is a travel website featuring up-to-date travel information from various destinations, blogger articles, categorized possibly by seasons or different locations. Users can also read or download e-books about specific destinations online.",
         image: "/project_travelseed/travelseed_mockup_cover_01.png",
-        link: "/",
+        link: "travel_seed",
         contents:[
             {
                 text: "User Flow",
@@ -288,7 +290,7 @@ const projects = [
         skills: ["UI Design"],
         desc: "This is a property management application designed to allow customers to conveniently book facilities and stay updated on the latest news regarding the property, all from their mobile phones.",
         image: "/project_theentrance/theentrance_mockup_cover_01.png",
-        link: "/",
+        link: "entrance",
         contents:[
             {
                 text: "UI Design",
@@ -307,7 +309,7 @@ const projects = [
         skills: ["Wireframing", "UI Design"],
         desc: "The client is an old-fashioned container shipping company. They wish to digitize their order matching function using an application and CMS, while also creating a promotional website to advertise. This move aims to enhance efficiency and align with the modern trend of digitalization and electronic demands.",
         image: "/project_wetruck/wetruck_mockup_cover_01.png",
-        link: "/",
+        link: "wetruck",
         contents:[
             {
                 text: "Wireframing",
@@ -336,17 +338,9 @@ export default function Projects() {
     <main className="flex min-h-screen flex-col relative">
     <ScrollToTopButton />
       <NavBar/>
-      <section className='mx-auto py-4 px-4 overflow-x-hidden'>
-      <div className='flex flex-col pb-32 pt-48'>
-      
-        {
-            projects.map((p, idx) => (
-                <ProjectItem key={idx} work={p} />
-            ))
-        }
-        <FooterSection />
-      </div>
-      
+      <section className='mx-auto py-4 px-4 overflow-x-hidden relative'>
+      <ProjectSection projects={projects}/>
+      <FooterSection />
       </section>
     </main>
   )

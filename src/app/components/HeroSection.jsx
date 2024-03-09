@@ -54,10 +54,10 @@ const HeroSection = () => {
                     </h1>
                 </div>
                 <div className="col-span-7">
-                    <h1 className="text-6xl md:text-3xl">Portfolio Website</h1>
+                    <h1 className="text-4xl md:text-3xl">Portfolio Website</h1>
                 </div>
                 <div className="col-span-7 mt-8 md:mt-0">
-                    <span className="bg-[#3e3f3c] text-white rounded-full px-4 py-2 uppercase text-4xl md:text-xl">Carol Chenug</span>
+                    <span className="bg-[#3e3f3c] text-white rounded-full px-4 py-2 uppercase text-2xl md:text-xl">Carol Chenug</span>
                 </div>
         </div>
     </div>

@@ -18,7 +18,7 @@ const HighlightWork = ({work}) => {
                     </div>
                 </div>
                 <h3 className='work-type'>{work.type}</h3>
-                <div className='flex flex-wrap gap-x-3 gap-y-3.5 bubble-container text-4xl md:text-base'>
+                <div className='flex flex-wrap gap-x-3 gap-y-3.5 bubble-container text-xl md:text-base'>
                     {
                         work.skills.map((s, idx) => (
                             <Bubble key={idx} text={s} />
