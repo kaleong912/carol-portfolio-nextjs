@@ -19,8 +19,8 @@ const items = [
     {
         text: "Instructions Design",
         images: [
-            "/graphic/graphic_instructions_01.png",
-            "/graphic/graphic_instructions_02.png"
+            "/graphic/graphic_Instructions_01.png",
+            "/graphic/graphic_Instructions_02.png"
         ]
     },
     {
