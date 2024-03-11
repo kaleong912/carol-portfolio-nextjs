@@ -337,7 +337,7 @@ export default function Projects() {
   return (
     <main className="flex min-h-screen flex-col relative">
     <ScrollToTopButton />
-      <NavBar/>
+      
       <section className='mx-auto py-4 px-4 overflow-x-hidden relative'>
       <ProjectSection projects={projects}/>
       <FooterSection />

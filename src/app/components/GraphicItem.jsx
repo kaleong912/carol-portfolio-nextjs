@@ -1,4 +1,6 @@
+'use client'
 import React from 'react'
+import Image from 'next/image'
 
 export const GraphicItem = ({item}) => {
   return (
@@ -7,7 +9,15 @@ export const GraphicItem = ({item}) => {
         <div className='flex flex-col gap-y-6'>
             {
                 item.images.map((path, idx) => (
-                    <img key={idx} src={path} />
+                    <Image
+                    loading='lazy'
+                    src={path}
+                    width={0}
+                    height={0}
+                    sizes='100vw'
+                    className='w-full h-auto'>
+
+                    </Image>
                 ))
             }
         </div>
