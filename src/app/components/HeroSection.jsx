@@ -4,7 +4,7 @@ import Image from 'next/image'
 import {motion} from 'framer-motion';
 import {TypeAnimation} from 'react-type-animation';
 import Lottie from 'lottie-react'
-import EyeBlink from '../../../public/data.json'
+import EyeBlink from '../../../public/data-2.json'
 
 const iconStyle = {
     width: 195,
