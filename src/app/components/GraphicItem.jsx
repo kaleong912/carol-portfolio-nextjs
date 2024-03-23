@@ -10,6 +10,7 @@ export const GraphicItem = ({item}) => {
             {
                 item.images.map((path, idx) => (
                     <Image
+                    key={idx}
                     loading='lazy'
                     src={path}
                     width={0}
