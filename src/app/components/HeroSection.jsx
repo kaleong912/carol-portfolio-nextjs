@@ -3,6 +3,13 @@ import React from 'react'
 import Image from 'next/image'
 import {motion} from 'framer-motion';
 import {TypeAnimation} from 'react-type-animation';
+import Lottie from 'lottie-react'
+import EyeBlink from '../../../public/data.json'
+
+const iconStyle = {
+    width: 195,
+    height: 179
+}
 
 const HeroSection = () => {
   return (
@@ -10,12 +17,13 @@ const HeroSection = () => {
         <div className="grid grid-cols-1 gap-y-4 lg:grid-cols-12 max-w-full">
             <div className="col-span-7">
                 <div className="relative w-fit">
-                    <Image
+                <Lottie animationData={EyeBlink} style={iconStyle} />
+                    {/* <Image
                         src="/logo.svg"
                         alt="logo"
                         width="195"
                         height="179"
-                    />
+                    /> */}
                     <Image
                         className="hero-sparkle sparkle"
                         src="/sparkle.svg"

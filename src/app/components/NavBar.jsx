@@ -3,6 +3,8 @@ import React, { useState }  from 'react'
 import Link from 'next/link';
 import NavLink from './NavLink';
 import Image from 'next/image';
+import Lottie from 'lottie-react'
+import EyeBlink from '../../../public/data.json'
 
 const navLinks = [
   {
@@ -19,6 +21,11 @@ const navLinks = [
   },
 ];
 
+const iconStyle = {
+  width: 22,
+  height: 21
+}
+
 const NavBar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
@@ -26,12 +33,13 @@ const NavBar = () => {
     <nav className="fixed mx-auto top-0 left-0 right-0 z-10 bg-[#f3f4eb] bg-opacity-100">
         <div className="flex flex-row relative items-center px-4 md:px-0 py-2 w-full mx-auto" id="navbar">
             <Link href={"/"} className="relative hidden md:block">
-              <Image
+            <Lottie animationData={EyeBlink} style={iconStyle} />
+              {/* <Image
                 src="/logo.svg"
                 width="22"
                 height="21"
                 alt="logo"
-              />
+              /> */}
               <Image
                         className="nav-sparkle sparkle"
                         src="/sparkle.svg"
