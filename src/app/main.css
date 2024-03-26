@@ -16,6 +16,24 @@
     }
 }
 
+@keyframes nav_sparkling{
+    0%{
+        transform: rotate(0deg);
+    }
+    40%{
+        transform: rotate(120deg);
+    }
+    50%{
+        transform: rotate(90deg);
+    }
+    70%{
+        transform: rotate(150deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
 @keyframes morph {
     0% {
       border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
@@ -27,6 +45,20 @@
 
     100% {
       border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+}
+
+@keyframes bg_morph {
+    0% {
+      border-radius: 30% 70% 60% 40% / 40% 60% 30% 70%;
+    }
+
+    50% {
+      border-radius: 70% 30% 40% 60% / 40% 70% 50% 30%;
+    }
+
+    100% {
+      border-radius: 30% 70% 60% 40% / 40% 60% 30% 70%;
     }
 }
 
@@ -49,6 +81,7 @@ section{
     position: absolute;
     right: -8px;
     top: -10px;
+    animation: nav_sparkling 1.5s ease-in-out infinite;
 }
 
 .nav-link{
@@ -107,7 +140,7 @@ section{
     border: 3px solid #3E3F3C;
     margin: 3rem;
     z-index: 1;
-    animation: morph 8s ease-in-out infinite;
+    animation: bg_morph 8s ease-in-out infinite;
 }
 
 #hero-container{

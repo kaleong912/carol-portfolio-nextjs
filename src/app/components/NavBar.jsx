@@ -41,7 +41,7 @@ const NavBar = () => {
                 alt="logo"
               /> */}
               <Image
-                        className="nav-sparkle sparkle"
+                        className="nav-sparkle"
                         src="/sparkle.svg"
                         alt="logo"
                         width="10"
