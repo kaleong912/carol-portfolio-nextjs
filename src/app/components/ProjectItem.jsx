@@ -45,7 +45,7 @@ const ProjectItem = ({work}) => {
                     <div className='flex flex-col' key={idx}>
                         <h1 className='content-headline gap-2'>{ content.text }</h1>
 
-                        <div className='flex flex-wrap items-center justify-center gap-3 mb-12 mt-6'>
+                        <div className='flex flex-wrap items-center justify-center gap-5 mb-12 mt-6'>
                             {
                                 content.images.map((path, idx) => (
                                     <img key={idx} src={path} />

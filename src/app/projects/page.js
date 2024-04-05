@@ -205,12 +205,42 @@ const projects = [
         link: "visiontrustee",
         contents:[
             {
+                text: "Competitive Analysis & User Research",
+                images: [
+                    "/project_visiontrustee/visiontrustee_detail_-1.png",
+                    "/project_visiontrustee/visiontrustee_detail_.png",
+                ]
+            },
+
+            {
+                text: "Site Map / User Flow",
+                images: [
+                    "/project_visiontrustee/visiontrustee_detail_userflow_01.png",
+                    
+                    "/project_visiontrustee/visiontrustee_detail_userflow_02.png",
+                ]
+            },
+            {
                 text: "Responsive UI Design",
                 images: [
                     "/project_visiontrustee/visiontrustee_detail_UI_01.png",
                     "/project_visiontrustee/visiontrustee_detail_UI_02.png",
-                    "/project_visiontrustee/visiontrustee_detail_UI_03.png",
+                    "/project_visiontrustee/visiontrustee_detail_03.png",
                     "/project_visiontrustee/visiontrustee_detail_UI_04.png",
+                    "/project_visiontrustee/visiontrustee_detail_UI_05.png",
+                    "/project_visiontrustee/visiontrustee_detail_UI_06.png",
+                    "/project_visiontrustee/visiontrustee_detail_UI_07.png",
+                    "/project_visiontrustee/visiontrustee_detail_UI_08.png",
+                    "/project_visiontrustee/visiontrustee_detail_UI_09.png",
+                ]
+            },
+            {
+                text: "CMS UI Design",
+                images: [
+                    "/project_visiontrustee/visiontrustee_detail_CMS_01.png",
+                    "/project_visiontrustee/visiontrustee_detail_CMS_02.png",
+                    "/project_visiontrustee/visiontrustee_detail_CMS_03.png",
+                    "/project_visiontrustee/visiontrustee_detail_CMS_04.png",
                 ]
             }
             
