@@ -45,10 +45,10 @@ const ProjectItem = ({work}) => {
                     <div className='flex flex-col' key={idx}>
                         <h1 className='content-headline gap-2'>{ content.text }</h1>
 
-                        <div className='flex flex-wrap items-center justify-center gap-5 mb-12 mt-6'>
+                        <div className={`grid items-center justify-center gap-5 mb-12 mt-6 grid-cols-2`}>
                             {
                                 content.images.map((path, idx) => (
-                                    <img key={idx} src={path} />
+                                    <img className={`${Object.prototype.toString.call(path) === "[object Object]" ? 'col-span-2' : 'col-span-1'}`} key={idx} src={Object.prototype.toString.call(path) === "[object Object]"? path.path: path} />
                                 ))
                             }
                         </div>

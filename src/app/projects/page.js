@@ -6,6 +6,7 @@ import Link from 'next/link'
 import ScrollToTopButton from '../components/ScrollToTopButton'
 import FooterSection from '../components/FooterSection'
 import ScrollSpy from "react-ui-scrollspy";
+import { split } from 'postcss/lib/list'
 
 
 const projects = [
@@ -21,7 +22,7 @@ const projects = [
             {
                 text: "Project Stage",
                 images: [
-                    "/project_casualenter/casualenter_detail_timeline_01.png"
+                    {path:  "/project_casualenter/casualenter_detail_timeline_01.png", full:true},
                 ]
             }
             ,
@@ -36,8 +37,8 @@ const projects = [
             {
                 text: "User Flow",
                 images: [
-                    "/project_casualenter/casualenter_detail_ userflow_01.png",
-                    "/project_casualenter/casualenter_detail_ userflow_02.png"
+                    {path: "/project_casualenter/casualenter_detail_ userflow_01.png", full:true},
+                    {path: "/project_casualenter/casualenter_detail_ userflow_02.png", full:true},
                 ]
             }
             ,
@@ -52,27 +53,27 @@ const projects = [
             {
                 text: "Color & Typography",
                 images: [
-                    "/project_casualenter/casualenter_detail_color_01.png"
+                    {path: "/project_casualenter/casualenter_detail_color_01.png", full:true},
                 ]
             }
             ,
             {
                 text: "UI Component Handing",
                 images: [
-                    "/project_casualenter/casualenter_detail_component_01.png"
+                    {path: "/project_casualenter/casualenter_detail_component_01.png", full:true},
                 ]
             }
             ,
             {
                 text: "State Graphics",
                 images: [
-                    "/project_casualenter/casualenter_detail_graphic_01.png"
+                    {path: "/project_casualenter/casualenter_detail_graphic_01.png", full:true},
                 ]
             }
             ,
             {
                 images: [
-                    "/project_casualenter/casualenter_detail_mockup_01.png"
+                    {path: "/project_casualenter/casualenter_detail_mockup_01.png", full:true},
                 ]
             }
 
@@ -91,22 +92,22 @@ const projects = [
             {
                 text: "User Flow",
                 images: [
-                    "/project_staffenter/staffenter_detail_userflow_01.png"
+                    {path: "/project_staffenter/staffenter_detail_userflow_01.png", full:true},
                 ]
             }
             ,
             {
                 text: "UI Visual Design",
                 images: [
-                    "/project_staffenter/staffenter_detail_UI_01.png",
-                    "/project_staffenter/staffenter_detail_UI_02.png"
+                    {path: "/project_staffenter/staffenter_detail_UI_01.png", full:true},
+                    {path: "/project_staffenter/staffenter_detail_UI_02.png", full:true},
                 ]
             }
             ,
             {
                 text: "Printing Materials & Instruction Guide & Shop QR code Poster",
                 images: [
-                    "/project_staffenter/staffenter_detail_printingmaterials_02.png"
+                    {path: "/project_staffenter/staffenter_detail_printingmaterials_02.png", full:true},
                 ]
             }
             
@@ -142,7 +143,7 @@ const projects = [
             {
                 text: "UI Visual Designn",
                 images: [
-                    "/project_citysuper_foodie/foodie_detail_UI_03.png"
+                    {path: "/project_citysuper_foodie/foodie_detail_UI_03.png", full:true},
                 ]
             }
             
@@ -162,15 +163,15 @@ const projects = [
             {
                 text: "Wireframing",
                 images: [
-                    "/project_citysuper_eshop/citysupereshop_detail_wireframing_01.png"
+                    {path: "/project_citysuper_eshop/citysupereshop_detail_wireframing_01.png", full:true},
                 ]
             }
             ,
             {
                 text: "UI Visual",
                 images: [
-                    "/project_citysuper_eshop/citysupereshop_detail_UI_01.png",
-                    "/project_citysuper_eshop/citysupereshop_detail_graphic_01.png"
+                    {path: "/project_citysuper_eshop/citysupereshop_detail_UI_01.png", full:true},
+                    {path: "/project_citysuper_eshop/citysupereshop_detail_graphic_01.png", full:true}
                 ]
             }
             ,
@@ -187,7 +188,7 @@ const projects = [
             {
                 text: "UI Component",
                 images: [
-                    "/project_citysuper_eshop/citysupereshop_detail_UIcomponent_01.png",
+                    {path: "/project_citysuper_eshop/citysupereshop_detail_UIcomponent_01.png", full:true},
                 ]
             }
             
@@ -207,40 +208,40 @@ const projects = [
             {
                 text: "Competitive Analysis & User Research",
                 images: [
-                    "/project_visiontrustee/visiontrustee_detail_-1.png",
-                    "/project_visiontrustee/visiontrustee_detail_.png",
+                    "/project_visiontrustee/visiontrustee_detail_@2x-1.png",
+                    "/project_visiontrustee/visiontrustee_detail_@2x.png",
                 ]
             },
 
             {
                 text: "Site Map / User Flow",
                 images: [
-                    "/project_visiontrustee/visiontrustee_detail_userflow_01.png",
+                    {path: "/project_visiontrustee/visiontrustee_detail_userflow_01@2x.png", full:true},
                     
-                    "/project_visiontrustee/visiontrustee_detail_userflow_02.png",
+                    {path: "/project_visiontrustee/visiontrustee_detail_userflow_02@2x.png", full:true},
                 ]
             },
             {
                 text: "Responsive UI Design",
                 images: [
-                    "/project_visiontrustee/visiontrustee_detail_UI_01.png",
-                    "/project_visiontrustee/visiontrustee_detail_UI_02.png",
-                    "/project_visiontrustee/visiontrustee_detail_03.png",
-                    "/project_visiontrustee/visiontrustee_detail_UI_04.png",
-                    "/project_visiontrustee/visiontrustee_detail_UI_05.png",
-                    "/project_visiontrustee/visiontrustee_detail_UI_06.png",
-                    "/project_visiontrustee/visiontrustee_detail_UI_07.png",
-                    "/project_visiontrustee/visiontrustee_detail_UI_08.png",
-                    "/project_visiontrustee/visiontrustee_detail_UI_09.png",
+                    {path: "/project_visiontrustee/visiontrustee_detail_UI_01@2x.png", full:true},
+                    "/project_visiontrustee/visiontrustee_detail_UI_02@2x.png",
+                    "/project_visiontrustee/visiontrustee_detail_03@2x.png",
+                    "/project_visiontrustee/visiontrustee_detail_UI_04@2x.png",
+                    "/project_visiontrustee/visiontrustee_detail_UI_05@2x.png",
+                    "/project_visiontrustee/visiontrustee_detail_UI_06@2x.png",
+                    "/project_visiontrustee/visiontrustee_detail_UI_07@2x.png",
+                    "/project_visiontrustee/visiontrustee_detail_UI_08@2x.png",
+                    "/project_visiontrustee/visiontrustee_detail_UI_09@2x.png",
                 ]
             },
             {
                 text: "CMS UI Design",
                 images: [
-                    "/project_visiontrustee/visiontrustee_detail_CMS_01.png",
-                    "/project_visiontrustee/visiontrustee_detail_CMS_02.png",
-                    "/project_visiontrustee/visiontrustee_detail_CMS_03.png",
-                    "/project_visiontrustee/visiontrustee_detail_CMS_04.png",
+                    "/project_visiontrustee/visiontrustee_detail_CMS_01@2x.png",
+                    "/project_visiontrustee/visiontrustee_detail_CMS_02@2x.png",
+                    "/project_visiontrustee/visiontrustee_detail_CMS_03@2x.png",
+                    "/project_visiontrustee/visiontrustee_detail_CMS_04@2x.png",
                 ]
             }
             
@@ -260,23 +261,23 @@ const projects = [
             {
                 text: "Wireframing",
                 images: [
-                    "/project_midland/midland_detail_wireframing_01.png",
-                    "/project_midland/midland_detail_wireframing_02.png",
+                    {path: "/project_midland/midland_detail_wireframing_01.png", full: true},
+                    {path: "/project_midland/midland_detail_wireframing_02.png", full: true},
                 ]
             }
             ,
             {
                 text: "UI Visual Design",
                 images: [
-                    "/project_midland/midland_detail_UI_01.png",
-                    "/project_midland/midland_detail_UI_02.png",
+                    {path: "/project_midland/midland_detail_UI_01.png", full: true},
+                    {path: "/project_midland/midland_detail_UI_02.png", full: true},
                 ]
             }
             ,
             {
                 text: "Showcase",
                 images: [
-                    "/project_midland/midland_detail_showcase_01.png",
+                    {path: "/project_midland/midland_detail_showcase_01.png", full: true}
                 ]
             }
             
@@ -296,16 +297,16 @@ const projects = [
             {
                 text: "User Flow",
                 images: [
-                    "/project_travelseed/travelseed_detail_userflow_01.png"
+                    {path: "/project_travelseed/travelseed_detail_userflow_01.png", full: true}
                 ]
             }
             ,
             {
                 text: "UI Visual Design",
                 images: [
-                    "/project_travelseed/travelseed_detail_UI_01.png",
-                    "/project_travelseed/travelseed_detail_UI_02.png",
-                    "/project_travelseed/travelseed_detail_graphic_02.png"
+                    {path: "/project_travelseed/travelseed_detail_UI_01.png", full: true},
+                    {path: "/project_travelseed/travelseed_detail_UI_02.png", full: true},
+                    {path: "/project_travelseed/travelseed_detail_graphic_02.png", full: true}
                 ]
             }
         
@@ -325,7 +326,7 @@ const projects = [
             {
                 text: "UI Design",
                 images: [
-                    "/project_theentrance/theentrance_detail_UI_01.png"
+                    {path: "/project_theentrance/theentrance_detail_UI_01.png", full: true}
                 ]
             }
             
@@ -344,14 +345,14 @@ const projects = [
             {
                 text: "Wireframing",
                 images: [
-                    "/project_wetruck/wetruck_detail_wireframing_01.png"
+                    {path: "/project_wetruck/wetruck_detail_wireframing_01.png", full: true}
                 ]
             }
             ,
             {
                 text: "UI Visual Design",
                 images: [
-                    "/project_wetruck/wetruck_detail_UI_01.png"
+                    {path: "/project_wetruck/wetruck_detail_UI_01.png", full: true}
                 ]
             }
         
