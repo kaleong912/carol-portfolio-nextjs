@@ -29,8 +29,8 @@ const projects = [
             {
                 text: "Competitive Analysis & User Research",
                 images: [
-                    "/project_casualenter/casualenter_detail_ userresearch_01.png",
-                    "/project_casualenter/casualenter_detail_ userresearch_02.png"
+                    "/project_casualenter/casualenter_detail_ userresearch_01@2x.png",
+                    "/project_casualenter/casualenter_detail_ userresearch_02@2x.png"
                 ]
             }
             ,
@@ -45,8 +45,8 @@ const projects = [
             {
                 text: "UI Visual Design",
                 images: [
-                    "/project_casualenter/casualenter_detail_UI_01.png",
-                    "/project_casualenter/casualenter_detail_UI_02.png"
+                    {path: "/project_casualenter/casualenter_detail_UI_01.png", full:true},
+                    {path: "/project_casualenter/casualenter_detail_UI_02.png", full:true}
                 ]
             }
             ,
@@ -127,16 +127,16 @@ const projects = [
             {
                 text: "Competitive Analysis & User Research",
                 images: [
-                    "/project_citysuper_foodie/foodie_detail_userresearch_01.png",
-                    "/project_citysuper_foodie/foodie_detail_userresearch_02.png"
+                    "/project_citysuper_foodie/foodie_detail_userresearch_01@2x.png",
+                    "/project_citysuper_foodie/foodie_detail_userresearch_02@2x.png"
                 ]
             }
             ,
             {
                 text: "CMS UI Design",
                 images: [
-                    "/project_citysuper_foodie/foodie_detail_UI_01.png",
-                    "/project_citysuper_foodie/foodie_detail_UI_02.png",
+                    "/project_citysuper_foodie/foodie_detail_UI_01@2x.png",
+                    "/project_citysuper_foodie/foodie_detail_UI_02@2x.png",
                 ]
             }
             ,
@@ -178,10 +178,10 @@ const projects = [
             {
                 text: "CMS UI",
                 images: [
-                    "/project_citysuper_eshop/citysupereshop_detail_CMSUI_01.png",
-                    "/project_citysuper_eshop/citysupereshop_detail_CMSUI_02.png",
-                    "/project_citysuper_eshop/citysupereshop_detail_CMSUI_03.png",
-                    "/project_citysuper_eshop/citysupereshop_detail_CMSUI_04.png"
+                    "/project_citysuper_eshop/citysupereshop_detail_CMSUI_01@2x.png",
+                    "/project_citysuper_eshop/citysupereshop_detail_CMSUI_02@2x.png",
+                    "/project_citysuper_eshop/citysupereshop_detail_CMSUI_03@2x.png",
+                    "/project_citysuper_eshop/citysupereshop_detail_CMSUI_04@2x.png"
                 ]
             }
             ,

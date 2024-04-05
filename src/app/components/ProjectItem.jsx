@@ -48,7 +48,7 @@ const ProjectItem = ({work}) => {
                         <div className={`grid items-center justify-center gap-5 mb-12 mt-6 grid-cols-2`}>
                             {
                                 content.images.map((path, idx) => (
-                                    <img className={`${Object.prototype.toString.call(path) === "[object Object]" ? 'col-span-2' : 'col-span-1'}`} key={idx} src={Object.prototype.toString.call(path) === "[object Object]"? path.path: path} />
+                                    <img className={`${Object.prototype.toString.call(path) === "[object Object]" ? 'col-span-2' : 'md:col-span-1 col-span-2'}`} key={idx} src={Object.prototype.toString.call(path) === "[object Object]"? path.path: path} />
                                 ))
                             }
                         </div>
